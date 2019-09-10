@@ -23,7 +23,74 @@ stages:
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
+          - script: |name: $(date:yyyyMMdd)$(rev:.rr)
+
+stages:
+  - stage: 'build'
+    condition: succeeded()
+    displayName: 'build-mvc'
+    jobs:
+      - job:
+        condition: succeeded()
+        displayName: 'build-process'
+        pool:
+          vmImage: 'ubuntu-16.04'
+        steps:
+          - task: UseDotNet@2
+            displayName: 'dotnet installer'
+            inputs:
+              version: '2.2.401' 
           - script: |
+              dotnet build 
+  - stage: 'test'
+    condition: succeeded()
+    displayName: 'test-mvc'
+    jobs:
+      - job:
+        condition: succeeded()
+        displayName: 'test-process'
+        pool:
+          vmImage: 'ubuntu-16.04'
+        steps:
+          - script: |
+              dotnet test
+  
+  - stage: 'pack'
+    condition: succeeded()
+    dependsOn:
+      - test
+    displayName: 'pack-mvc'
+    jobs:
+      - job:
+        condition: succeeded()
+        displayName: 'pack-process'
+        pool:
+          vmImage: 'ubuntu-16.04'
+        steps:
+          - script: |
+              dotnet publish
+  
+  - stage: 'deploy'
+    condition: succeeded()
+    dependsOn:
+      - test
+    displayName: 'deploy-mvc'
+    jobs:
+      - job:
+        condition: succeeded()
+        displayName: 'deploy-process'
+        pool:
+          vmImage: 'ubuntu-16.04'
+        steps:
+          - script: |
+              echo 'deploy passed...'
+trigger:
+  branches:
+    include:
+      - master
+
+variables:
+  testVar: 'tuesday'
               dotnet test
   
   - stage: 'pack'
