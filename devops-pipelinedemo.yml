@@ -13,6 +13,7 @@ stages:
         steps:
           - script: |
               echo 'build passed...'
+
   - stage: 'test'
     condition: succeeded()
     displayName: 'test-mvc'
@@ -51,9 +52,11 @@ stages:
         steps:
           - script: |
               echo 'deploy passed...'
+
 trigger:
   branches:
     include:
       - master
 
 variables:
+  - testVar: 'tuesday'
