@@ -2,61 +2,58 @@ name: $(date:yyyyMMdd)$(rev:.rr)
 
 stages:
   - stage: 'build'
-    condition:  succeeded()
-    displayName: 'build mvc'
+    condition: succeeded()
+    displayName: 'build-mvc'
     jobs:
       - job:
-        condition:  succeeded()
+        condition: succeeded()
         displayName: 'build-process'
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          - scripts: |
+          - script: |
               echo 'build passed...'
-
   - stage: 'test'
-    condition:  succeeded()
-    displayName: 'test mvc'
+    condition: succeeded()
+    displayName: 'test-mvc'
     jobs:
       - job:
-        condition:  succeeded()
+        condition: succeeded()
         displayName: 'test-process'
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          - scripts: |
+          - script: |
               echo 'test passed...'
-
+  
   - stage: 'pack'
-    condition:  succeeded()
-    displayName: 'pack mvc'
+    condition: succeeded()
+    displayName: 'pack-mvc'
     jobs:
       - job:
-        condition:  succeeded()
+        condition: succeeded()
         displayName: 'pack-process'
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          - scripts: |
+          - script: |
               echo 'pack passed...'
   
   - stage: 'deploy'
-    condition:  succeeded()
-    displayName: 'deploy mvc'
+    condition: succeeded()
+    displayName: 'deploy-mvc'
     jobs:
       - job:
-        condition:  succeeded()
+        condition: succeeded()
         displayName: 'deploy-process'
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          - scripts: |
+          - script: |
               echo 'deploy passed...'
-
-
-triggers:
-  - branches:
-      include:
-        - master 
+trigger:
+  branches:
+    include:
+      - master
 
 variables:
