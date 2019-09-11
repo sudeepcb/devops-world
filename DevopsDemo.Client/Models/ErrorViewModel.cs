@@ -1,6 +1,6 @@
 using System;
 
-namespace DevOpsWorld.Client.Models
+namespace DevopsDemo.Client.Models
 {
     public class ErrorViewModel
     {
