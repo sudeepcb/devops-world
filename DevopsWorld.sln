@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevopsDemo.Client", "DevopsDemo.Client\DevopsDemo.Client.csproj", "{80003ECF-B683-4712-9E91-D256825E702D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevopsWorld.Client", "DevopsWorld.Client\DevopsWorld.Client.csproj", "{80003ECF-B683-4712-9E91-D256825E702D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevopsDemo.Tests", "DevopsDemo.Tests\DevopsDemo.Tests.csproj", "{70A2F609-8F21-4B12-967D-B819C1C0468A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevopsWorld.Tests", "DevopsWorld.Tests\DevopsWorld.Tests.csproj", "{70A2F609-8F21-4B12-967D-B819C1C0468A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
