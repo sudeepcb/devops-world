@@ -28,6 +28,10 @@ stages:
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
+          - task: UseDotNet@2
+            displayName: 'dotnet installer'
+            inputs:
+              version: '2.2.401' 
           - script: |
               dotnet tool install --global dotnet-sonarscanner
               dotnet sonarscanner begin /k:"DevopsWorld1234" /o:"sudeepcb" /d:sonar.login="49274eb024b1a449a6fef894338c324b296cc188 /d:sonar.host.url="https://sonarcloud.io/ 
