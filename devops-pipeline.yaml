@@ -29,7 +29,7 @@ stages:
           vmImage: 'ubuntu-16.04'
         steps:
           - script: |
-              dotnet install --global sonarscanner
+              dotnet tool install --global dotnet-sonarscanner
               dotnet sonarscanner begin /k:"devopsdemo1234" /o:"sudeepcb" /d:sonar.login="49274eb024b1a449a6fef894338c324b296cc188" 
               dotnet build
               dotnet test -p:CollectCoverage=true
