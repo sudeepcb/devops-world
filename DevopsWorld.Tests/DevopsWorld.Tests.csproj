@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DevopsDemo.Client\DevopsDemo.Client.csproj" />
+    <ProjectReference Include="..\DevopsWorld.Client\DevopsWorld.Client.csproj" />
   </ItemGroup>
 
 </Project>

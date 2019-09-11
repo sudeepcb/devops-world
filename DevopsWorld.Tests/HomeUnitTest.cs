@@ -1,8 +1,8 @@
-using DevopsDemo.Client.Controllers;
+using DevopsWorld.Client.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
-namespace DevopsDemo.Tests
+namespace DevopsWorld.Tests
 {
   public class HomeUnitTest
   {

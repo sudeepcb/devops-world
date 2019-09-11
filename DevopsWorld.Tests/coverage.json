@@ -1,8 +1,8 @@
 {
-  "DevopsDemo.Client.dll": {
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Program.cs": {
-      "DevopsDemo.Client.Program": {
-        "System.Void DevopsDemo.Client.Program::Main(System.String[])": {
+  "DevopsWorld.Client.dll": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Program.cs": {
+      "DevopsWorld.Client.Program": {
+        "System.Void DevopsWorld.Client.Program::Main(System.String[])": {
           "Lines": {
             "16": 0,
             "17": 0,
@@ -10,7 +10,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Hosting.IWebHostBuilder DevopsDemo.Client.Program::CreateWebHostBuilder(System.String[])": {
+        "Microsoft.AspNetCore.Hosting.IWebHostBuilder DevopsWorld.Client.Program::CreateWebHostBuilder(System.String[])": {
           "Lines": {
             "21": 0,
             "22": 0
@@ -19,15 +19,15 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Startup.cs": {
-      "DevopsDemo.Client.Startup": {
-        "Microsoft.Extensions.Configuration.IConfiguration DevopsDemo.Client.Startup::get_Configuration()": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Startup.cs": {
+      "DevopsWorld.Client.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration DevopsWorld.Client.Startup::get_Configuration()": {
           "Lines": {
             "22": 0
           },
           "Branches": []
         },
-        "System.Void DevopsDemo.Client.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+        "System.Void DevopsWorld.Client.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
           "Lines": {
             "26": 0,
             "27": 0,
@@ -58,7 +58,7 @@
             }
           ]
         },
-        "System.Void DevopsDemo.Client.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+        "System.Void DevopsWorld.Client.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
           "Lines": {
             "40": 0,
             "41": 0,
@@ -115,7 +115,7 @@
             }
           ]
         },
-        "System.Void DevopsDemo.Client.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+        "System.Void DevopsWorld.Client.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
           "Lines": {
             "17": 0,
             "18": 0,
@@ -125,8 +125,8 @@
           "Branches": []
         }
       },
-      "DevopsDemo.Client.Startup/<>c": {
-        "System.Void DevopsDemo.Client.Startup/<>c::<ConfigureServices>b__4_0(Microsoft.AspNetCore.Builder.CookiePolicyOptions)": {
+      "DevopsWorld.Client.Startup/<>c": {
+        "System.Void DevopsWorld.Client.Startup/<>c::<ConfigureServices>b__4_0(Microsoft.AspNetCore.Builder.CookiePolicyOptions)": {
           "Lines": {},
           "Branches": [
             {
@@ -149,15 +149,15 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Models/ErrorViewModel.cs": {
-      "DevopsDemo.Client.Models.ErrorViewModel": {
-        "System.String DevopsDemo.Client.Models.ErrorViewModel::get_RequestId()": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Models/ErrorViewModel.cs": {
+      "DevopsWorld.Client.Models.ErrorViewModel": {
+        "System.String DevopsWorld.Client.Models.ErrorViewModel::get_RequestId()": {
           "Lines": {
             "7": 0
           },
           "Branches": []
         },
-        "System.Boolean DevopsDemo.Client.Models.ErrorViewModel::get_ShowRequestId()": {
+        "System.Boolean DevopsWorld.Client.Models.ErrorViewModel::get_ShowRequestId()": {
           "Lines": {
             "9": 0
           },
@@ -165,9 +165,9 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Controllers/HomeController.cs": {
-      "DevopsDemo.Client.Controllers.HomeController": {
-        "Microsoft.AspNetCore.Mvc.IActionResult DevopsDemo.Client.Controllers.HomeController::Index()": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Controllers/HomeController.cs": {
+      "DevopsWorld.Client.Controllers.HomeController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult DevopsWorld.Client.Controllers.HomeController::Index()": {
           "Lines": {
             "14": 1,
             "15": 1,
@@ -175,7 +175,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult DevopsDemo.Client.Controllers.HomeController::Privacy()": {
+        "Microsoft.AspNetCore.Mvc.IActionResult DevopsWorld.Client.Controllers.HomeController::Privacy()": {
           "Lines": {
             "19": 1,
             "20": 1,
@@ -183,7 +183,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult DevopsDemo.Client.Controllers.HomeController::Error()": {
+        "Microsoft.AspNetCore.Mvc.IActionResult DevopsWorld.Client.Controllers.HomeController::Error()": {
           "Lines": {
             "25": 0,
             "26": 0,
@@ -227,8 +227,8 @@
       }
     }
   },
-  "DevopsDemo.Client.Views.dll": {
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/Home/Index.cshtml": {
+  "DevopsWorld.Client.Views.dll": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/Home/Index.cshtml": {
       "AspNetCore.Views_Home_Index/<ExecuteAsync>d__0": {
         "System.Void AspNetCore.Views_Home_Index/<ExecuteAsync>d__0::MoveNext()": {
           "Lines": {
@@ -238,7 +238,7 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/Home/Privacy.cshtml": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/Home/Privacy.cshtml": {
       "AspNetCore.Views_Home_Privacy/<ExecuteAsync>d__0": {
         "System.Void AspNetCore.Views_Home_Privacy/<ExecuteAsync>d__0::MoveNext()": {
           "Lines": {
@@ -249,7 +249,7 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/Shared/Error.cshtml": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/Shared/Error.cshtml": {
       "AspNetCore.Views_Shared_Error/<ExecuteAsync>d__0": {
         "System.Void AspNetCore.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()": {
           "Lines": {
@@ -263,7 +263,7 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/Shared/_CookieConsentPartial.cshtml": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/Shared/_CookieConsentPartial.cshtml": {
       "AspNetCore.Views_Shared__CookieConsentPartial/<ExecuteAsync>d__10": {
         "System.Void AspNetCore.Views_Shared__CookieConsentPartial/<ExecuteAsync>d__10::MoveNext()": {
           "Lines": {
@@ -392,7 +392,7 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/Shared/_Layout.cshtml": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/Shared/_Layout.cshtml": {
       "AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__44_0>d": {
         "System.Void AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__44_0>d::MoveNext()": {
           "Lines": {
@@ -1182,7 +1182,7 @@
         }
       }
     },
-    "/Users/fredjy/registry/DevopsDemo/DevopsDemo.Client/Views/_ViewStart.cshtml": {
+    "/Users/fredjy/registry/DevopsWorld/DevopsWorld.Client/Views/_ViewStart.cshtml": {
       "AspNetCore.Views__ViewStart/<ExecuteAsync>d__0": {
         "System.Void AspNetCore.Views__ViewStart/<ExecuteAsync>d__0::MoveNext()": {
           "Lines": {
