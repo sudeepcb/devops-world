@@ -62,8 +62,21 @@ stages:
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
+          - task: Docker@2
+            inputs:
+              command: 'login'
+              containerRegistry: 'docker'
+            displayName: 'docker login'
+          
           - script: |
-              dotnet publish
+              docker image build --file Dockerfile --tag devopsworld .
+              docker image tag devopsdemo errdaywepush/dovopsworld
+              docker push
+          - task: Docker@2
+            inputs:
+              command: 'logout'
+              containerRegistry: 'docker'
+            displayName: 'docker login'
   
   - stage: 'deploy'
     condition: succeeded()
