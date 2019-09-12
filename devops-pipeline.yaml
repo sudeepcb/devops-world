@@ -90,7 +90,6 @@ stages:
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          steps:
           - task: AzureWebAppContainer@1
             inputs:
               azureSubscription: 'Free Trial(5155a2a6-c8db-444a-a4bc-c7e049df4aa0)'
