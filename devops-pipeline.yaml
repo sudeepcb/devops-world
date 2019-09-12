@@ -79,9 +79,9 @@ stages:
             displayName: 'docker login'
   
   - stage: 'deploy'
-    condition: succeeded('pack')
+    condition: succeeded()
     dependsOn:
-      - test
+      - pack
     displayName: 'deploy-mvc'
     jobs:
       - job:
