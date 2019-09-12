@@ -71,7 +71,7 @@ stages:
           - script: |
               docker image build --file Dockerfile --tag devopsworld .
               docker image tag devopsdemo errdaywepush/dovopsworld
-              docker push
+              docker push errdaywepush/devopsworld
           - task: Docker@2
             inputs:
               command: 'logout'
