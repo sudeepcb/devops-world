@@ -79,7 +79,7 @@ stages:
             displayName: 'docker login'
   
   - stage: 'deploy'
-    condition: succeeded()
+    condition: succeeded('pack')
     dependsOn:
       - test
     displayName: 'deploy-mvc'
@@ -90,8 +90,12 @@ stages:
         pool:
           vmImage: 'ubuntu-16.04'
         steps:
-          - script: |
-              echo 'working on it...'
+          steps:
+          - task: AzureWebAppContainer@1
+            inputs:
+              azureSubscription: 'Free Trial(5155a2a6-c8db-444a-a4bc-c7e049df4aa0)'
+              appName: 'devopsworldisit'
+              containers: 'errdaywepush/devopsworld'
 
 trigger:
   branches:
