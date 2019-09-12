@@ -70,7 +70,7 @@ stages:
           
           - script: |
               docker image build --file Dockerfile --tag devopsworld .
-              docker image tag devopsdemo errdaywepush/dovopsworld
+              docker image tag devopsworld errdaywepush/dovopsworld
               docker push errdaywepush/devopsworld
           - task: Docker@2
             inputs:
